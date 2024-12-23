@@ -15,6 +15,8 @@ namespace ABCMedical.Controllers
 
         public IActionResult Index()
         {
+            //ViewData["CustomerID"] = HttpContext.Session.GetString("CustomerID");
+            
             return View();
         }
 

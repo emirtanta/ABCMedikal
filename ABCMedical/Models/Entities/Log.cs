@@ -14,9 +14,11 @@ namespace ABCMedical.Models.Entities
         public int OrderID { get; set; }
 
         [Display(Name = "Kayıt Türü")]
+        [StringLength(50)]
         public string LogType { get; set; }
 
         [Display(Name = "Müşteri Tipi")]
+        [StringLength(50)]
         public string CustomerType { get; set; }
         public int ProductID { get; set; }
 

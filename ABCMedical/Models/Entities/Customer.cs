@@ -8,10 +8,26 @@ namespace ABCMedical.Models.Entities
         public int CustomerID { get; set; }
 
         [Display(Name ="Ad")]
+        [StringLength(50)]
         public string CustomerName { get; set; }
 
         [Display(Name ="Soyad")]
+        [StringLength(50)]
         public string CustomerSurname { get; set; }
+
+        [Display(Name = "Kullanıcı Adı")]
+        [StringLength(50)]
+        public string Username { get; set; }
+
+        [Display(Name = "E-Posta")]
+        [StringLength(50)]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+
+        [Display(Name = "Şifre")]
+        [StringLength(50)]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
 
         [Display(Name ="Bütçe")]
         public decimal Budget { get; set; }

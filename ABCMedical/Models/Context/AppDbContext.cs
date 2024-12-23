@@ -20,20 +20,20 @@ namespace ABCMedical.Models.Context
 
             // Örnek veriler
             modelBuilder.Entity<Customer>().HasData(
-                new Customer { CustomerID = 1, CustomerName = "Uğur Çam", Budget = 25000, CustomerType = EnumCustomerType.Standart, TotalSpent = 1200 },
-                new Customer { CustomerID = 2, CustomerName = "Cem Can", Budget = 30000, CustomerType = EnumCustomerType.Standart, TotalSpent = 2000 },
-                new Customer { CustomerID = 3, CustomerName = "Ali Veli", Budget = 4000, CustomerType = EnumCustomerType.Standart, TotalSpent = 1500 },
-                new Customer { CustomerID = 4, CustomerName = "Kazım Okka", Budget = 15000, CustomerType = EnumCustomerType.Premium, TotalSpent = 500 },
-                new Customer { CustomerID = 5, CustomerName = "Cemil Şükür", Budget = 100000, CustomerType = EnumCustomerType.Premium, TotalSpent = 150000 }
+                new Customer { CustomerID = 1, CustomerName = "Uğur",CustomerSurname="Çam",Username="ucam",Email="ucam@gmail.com",Password="1", Budget = 25000, CustomerType = EnumCustomerType.Standart, TotalSpent = 1200 },
+                new Customer { CustomerID = 2, CustomerName = "Cem", CustomerSurname = "Can", Username = "ccan", Email = "ccan@gmail.com", Password = "1", Budget = 30000, CustomerType = EnumCustomerType.Standart, TotalSpent = 2000 },
+                new Customer { CustomerID = 3, CustomerName = "Ali", CustomerSurname = "Veli", Username = "aveli", Email = "aveli@gmail.com", Password = "1", Budget = 4000, CustomerType = EnumCustomerType.Standart, TotalSpent = 1500 },
+                new Customer { CustomerID = 4, CustomerName = "Kazım", CustomerSurname = "Okka", Username = "kokka", Email = "kokka@gmail.com", Password = "1", Budget = 15000, CustomerType = EnumCustomerType.Premium, TotalSpent = 500 },
+                new Customer { CustomerID = 5, CustomerName = "Cemil", CustomerSurname = "Şükür", Username = "csukur", Email = "csukur@gmail.com", Password = "1", Budget = 100000, CustomerType = EnumCustomerType.Premium, TotalSpent = 150000 }
             );
 
             modelBuilder.Entity<Product>().HasData(
-                new Product { ProductID = 1, ProductName = "Laptop", Stock = 50, Price = 50000 },
-                new Product { ProductID = 2, ProductName = "IPhone 16 Plus", Stock = 100, Price = 90000 },
-                new Product { ProductID = 3, ProductName = "Swatch Saat", Stock = 100, Price = 5500 },
-                new Product { ProductID = 4, ProductName = "Logitech Mouse", Stock = 100, Price = 500 },
-                new Product { ProductID = 5, ProductName = "Hp Yazıcı", Stock = 100, Price = 6000 },
-                new Product { ProductID = 6, ProductName = "Arçelik Buzdolabı", Stock = 100, Price = 10000 }
+                new Product { ProductID = 1, ProductName = "Laptop", Stock = 50, UnitPrice = 50000 },
+                new Product { ProductID = 2, ProductName = "IPhone 16 Plus", Stock = 100, UnitPrice = 90000 },
+                new Product { ProductID = 3, ProductName = "Swatch Saat", Stock = 100, UnitPrice = 5500 },
+                new Product { ProductID = 4, ProductName = "Logitech Mouse", Stock = 100, UnitPrice = 500 },
+                new Product { ProductID = 5, ProductName = "Hp Yazıcı", Stock = 100, UnitPrice = 6000 },
+                new Product { ProductID = 6, ProductName = "Arçelik Buzdolabı", Stock = 100, UnitPrice = 10000 }
             );
         }
     }

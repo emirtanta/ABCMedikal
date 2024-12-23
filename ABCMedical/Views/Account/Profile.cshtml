@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Profilim";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="row">
+    <aside class="profile-info col-md-12">
+        <section class="panel">
+
+            <div class="panel-body bio-graph-info">
+                <h1 class="text-center">Profil Bilgileri</h1>
+                <div class="row">
+                    <div class="bio-row">
+                        <p><span><b>Ad</b> </span>: @Model.CustomerName</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span><b>Soyad</b> </span>: @Model.CustomerSurname</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span><b>Kullanıcı Adı</b> </span>: @Model.Username</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span><b>E-Posta</b></span>: @Model.Email</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span><b>Müşteri Tipi</b> </span>: @Model.CustomerType</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+
+</div>

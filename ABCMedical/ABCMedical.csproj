@@ -28,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Img\" />
     <Folder Include="wwwroot\tema\admintema\FlatAdmin\assets\jquery-file-upload\server\node\public\files\thumbnail\" />
     <Folder Include="wwwroot\tema\admintema\FlatAdmin\assets\jquery-file-upload\server\node\tmp\" />
     <Folder Include="wwwroot\tema\admintema\FlatAdmin\assets\jquery-file-upload\server\php\files\thumbnail\" />
